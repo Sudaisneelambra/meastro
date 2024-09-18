@@ -16,11 +16,15 @@ export class ChargerDetailsComponent {
 
   constructor() { }
 
+  /**rendering chart on ngOnInit*/
   ngOnInit(): void {
     this.createPieChart();
   }
 
+   /**chart rendering */
   createPieChart() {
+
+     /** static Data */
     const data = [
       { status: 'active charges', count: 19 },
       { status: 'inactive charges', count: 2 },

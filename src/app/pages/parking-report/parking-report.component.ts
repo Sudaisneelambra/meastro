@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ParkingReportComponent {
 
+
+  /**static data */
   bookings=[
     {
       customerName:'vickey',

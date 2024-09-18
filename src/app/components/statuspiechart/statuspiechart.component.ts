@@ -14,11 +14,16 @@ export class StatuspiechartComponent {
 
   constructor() { }
 
+
+   /**rendering chart on ngOnInit*/
   ngOnInit(): void {
     this.createPieChart();
   }
 
+  /**chart rendering */
   createPieChart() {
+
+    /** static Data */
     const data = [
       { status: 'active station', count: 8 },
       { status: 'inactive station', count: 2 },

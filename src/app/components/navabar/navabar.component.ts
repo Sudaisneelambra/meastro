@@ -13,21 +13,25 @@ export class NavabarComponent {
 
   constructor(private router:Router){}
 
-
+  /**checking the url */
   isActive(route: string): boolean {
     // const currentRoute = this.router.url.split('/').pop();  
     return this.router.url.split('/').includes(route)
   }
 
+  /**checking the url */
   isReportActive(route: string): boolean {
     // const currentRoute = this.router.url.split('/').pop();  
     return this.router.url.split('/').includes(route)
   }
 
 
+  /**navigate to child route */
   navigateTo(route: string): void { 
     this.router.navigate([`/home/${route}`]);
   }
+
+  /**navigate to inner child route */
   navigateToInner(route: string): void {     
     this.router.navigate([`/home/reports/${route}`]);
   }

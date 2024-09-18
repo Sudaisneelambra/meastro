@@ -15,11 +15,16 @@ export class UnitconsumedChartComponent {
 
   constructor() { }
 
+
+  /**chart rendering on init */
   ngOnInit(): void {
     this.createPieChart();
   }
 
+  /**chart rendering */
   createPieChart() {
+
+    /**static data */
    const  data = [
       { month: 'january', count: 0 },
       { month: 'february', count: 0 },

@@ -18,6 +18,7 @@ Chart.register(...registerables);
 })
 export class BarChartComponent {
 
+  /** static Data */
   data = [
     { month: 'january', count: 0 },
     { month: 'february', count: 0 },
@@ -30,12 +31,17 @@ export class BarChartComponent {
     { month: 'september', count: 0 },
   ];
 
+
+  /**initialize chart */
   private chart: Chart | undefined;
 
+
+  /**rendering chart on ngOnInit*/
   ngOnInit() {
     this.renderChart();
   }
 
+  /**chart rendering */
   renderChart(): void {
     const ctx = document.getElementById('bar') as HTMLCanvasElement;
     if (this.chart) {

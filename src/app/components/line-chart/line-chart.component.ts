@@ -17,6 +17,7 @@ Chart.register(...registerables);
 })
 export class LineChartComponent {
 
+   /** static Data */
   data = [
     { month: 'january', count: 0 },
     { month: 'february', count: 0 },
@@ -31,10 +32,12 @@ export class LineChartComponent {
 
   private chart: Chart | undefined;
 
+  /**rendering chart on ngOnInit*/
   ngOnInit() {
     this.renderChart();
   }
 
+   /**chart rendering */
   renderChart(): void {
     const ctx = document.getElementById('line') as HTMLCanvasElement;
     if (this.chart) {
