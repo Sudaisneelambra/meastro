@@ -1,0 +1,133 @@
+.main-container{
+    background-image: url('/assets/images/meastro.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    width: 500px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.image h3{
+    margin: 0px;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.input-fields{
+    height: 75px;
+    width: 100%;
+    position: relative;
+}
+
+.input-fields img{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 0px;
+    top: 30%;
+}
+.input-fields input{
+    padding-top: 20px;
+}
+
+.input-fields button {
+    position: absolute;
+    right: 0px;
+    top: 90%;
+    transform: translateY(-30%);
+  }
+  
+  .input-fields mat-icon {
+    font-size: 20px;
+  }
+
+  .button{
+    width: 100%;
+  }
+
+  .button button{
+    width: 100%;
+    height: 100%;
+    background-color: #008297;
+    border: none;
+    outline: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 7px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    
+}
+
+.input p{
+    color: #008297;
+    margin: 0;
+    margin-bottom: 3px;
+    width: 100%;
+    text-align: end;
+    padding-right: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.go-to-signup{
+    color: #008297;
+    margin: 0;
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.password{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.error-message{
+    color: red;
+}
+
+@media(max-width:600px){
+    .login-container{
+        width: 90%;
+        padding-left: 10px;
+        padding-right: 10px;
+    
+    }
+    .image h3{
+        font-size: 18px;
+    }
+}
+
