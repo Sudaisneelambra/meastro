@@ -1,0 +1,37 @@
+<nav class="navabar">
+    <div class="logo">
+        <img src="/assets/images/logoremovedbg.png" alt="">
+    </div>
+    <div class="menus">
+        <p  (click)="navigateTo('dashboard')" [ngClass]="{'active': isActive('dashboard')}"> <img src="/assets/images/dashboard.png" alt="" [ngClass]="{'imagesactive': isActive('dashboard')}">Dashboard</p>
+    </div>
+    <div class="menus">
+        <p  (click)="navigateTo('stations')" [ngClass]="{'active': isActive('stations')}"><img src="/assets/images/charging.png" alt="" [ngClass]="{'imagesactive': isActive('stations')}">Stations</p>
+    </div>
+    <div class="menus">
+        <p  (click)="navigateTo('complaints')" [ngClass]="{'active': isActive('complaints')}"><img src="/assets/images/complain.png" alt="" [ngClass]="{'imagesactive': isActive('complaints')}">Complaints</p>
+    </div>
+    <div class="menus">
+        <p  (click)="navigateTo('device-testing')" [ngClass]="{'active': isActive('device-testing')}"><img src="/assets/images/test.png" alt="" [ngClass]="{'imagesactive': isActive('device-testing')}"> Device Testing</p>
+    </div>
+    <div class="menus">
+        <p  (click)="navigateTo('booking-manage')" [ngClass]="{'active': isActive('booking-manage')}"><img src="/assets/images/booking.png" alt="" [ngClass]="{'imagesactive': isActive('booking-manage')}"> Booking Manage</p>
+    </div>
+    <div class="menus">
+        <p  (click)="navigateTo('new-station-request')" [ngClass]="{'active': isActive('new-station-request')}"><img src="/assets/images/charging.png" alt="" [ngClass]="{'imagesactive': isActive('new-station-request')}">New Station Request</p>
+    </div>
+    <div class="menus " style="position: relative;"
+        (mouseenter)="mouseHovered=true"
+        (mouseleave)="mouseHovered=false"
+        >
+        <p  [ngClass]="{'active': isActive('reports')}"><img src="/assets/images/diagram.png" alt="" [ngClass]="{'imagesactive': isActive('reports')}">Reports</p>
+        <div class="dropdown-content" *ngIf="mouseHovered">
+            <div class="uls" (click)="navigateToInner('parking-report')" [ngClass]="{'report-active':isReportActive('parking-report')}" >parking history report</div>
+            <div class="uls" (click)="navigateToInner('charge-report')" [ngClass]="{'report-active':isReportActive('charge-report')}"  >charge history report</div>
+            <div class="uls" (click)="navigateToInner('station-owner-report')" [ngClass]="{'report-active':isReportActive('station-owner-report')}"  >station owner report</div>
+        </div>
+    </div>
+    <div class="menus" style="padding-right: 15px;">
+        <p style=" justify-content: end;"><img src="/assets/images/user.png" alt=""> Demo_user</p>
+    </div>
+</nav>

@@ -1,0 +1,87 @@
+.navabar{
+    width: 100%;
+    height: 50px !important;
+    background: #006a47;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1.5fr 1.5fr 1.5fr 1fr 2fr;
+
+}
+
+.logo{
+    height: 50px;
+}
+.logo img{
+    height: 100%;
+}
+.menus{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.menus p{
+    font-size: 15px;
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menus .active {
+    transition: .5s ease-in-out;
+
+    background-color: #f0f0f0;
+    color: #006a47; 
+  }
+
+  .menus p img{
+    height: 20px;
+    margin-right: 5px;
+    color: white;
+    background-color: white;
+    padding: 4px;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+
+  }
+
+  .menus p img.imagesactive{
+    background-color: #006a47;
+
+  }
+
+ .dropdown-content{
+    position: absolute; 
+    box-shadow: 0px 0px 15px 1px gray;
+    top: 50px;
+    left: 30px;
+     width: 180px; 
+     background-color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
+    padding: 4px;
+ }
+
+ .uls{
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+
+ }
+
+ .dropdown-content .report-active{
+    background-color:rgb(15, 96, 128);
+    color: white;
+ }
+
+
+

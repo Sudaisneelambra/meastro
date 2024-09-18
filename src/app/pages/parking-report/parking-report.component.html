@@ -1,0 +1,28 @@
+<div class="main-container">
+    <h3>Parking History Report</h3>
+    <table>
+        <thead>
+          <tr>
+            <th>SL No.</th>
+            <th>Customer Name</th>
+            <th>Station Name</th>
+            <th>Booking Status</th>
+            <th>Duration</th>
+            <th>Parking Type</th>
+            <th>Amount (Rs.)</th>
+          </tr>
+        </thead>
+        <tbody>
+            
+          <tr *ngFor="let booking of bookings ; let i=index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ booking.customerName  }}</td>
+            <td>{{ booking.stationName }}</td>
+            <td>{{ booking.bookingStatus }}</td>
+            <td>{{ booking.duration}}</td>
+            <td>{{ booking.parkingType }}</td>
+            <td>{{ booking.amount }}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
