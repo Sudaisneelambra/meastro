@@ -10,10 +10,10 @@ export class CommonService {
   constructor(private http:HttpClient) { }
 
 
-  api='http://cbe.themaestro.in/api_mcharge_v2/login'
+  api='http://cbe.themaestro.in:8021/api_mcharge_v2/login'
 
-  login(data:any):Observable<any>{
-    return this.http.post(this.api,data)
+  login(data:any,options:any):Observable<any>{
+    return this.http.post(this.api, data, options);
   }
 
 }
